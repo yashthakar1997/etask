@@ -6,6 +6,8 @@
  *  Date            - 28th Aug 2015
  *  license         - GNU General Public License version 2 or later
 */
+
+echo "string";
 require('sigin.php');
 
 
