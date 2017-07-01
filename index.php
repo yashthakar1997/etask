@@ -6,7 +6,7 @@
  *  Date            - 28th Aug 2015
  *  license         - GNU General Public License version 2 or later
 */
-
+echo "string";
 
 // REQUIREMENTS - PHP v5.3 or later
 // Note: The PHP client library requires that PHP has curl extensions configured. 
