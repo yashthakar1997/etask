@@ -21,7 +21,7 @@ echo "string";
 require_once __DIR__.'/gplus-lib/vendor/autoload.php';
 
 const CLIENT_ID = '996313747922-pk3lp8vihrmf8sadhm4k16ajbj5vi8t7.apps.googleusercontent.com';
-const CLIENT_SECRET = 'GiEv2DBePwdTVQx3-ov7MKGH';
+const CLIENT_SECRET = 'CWk_yci9f1wIhYKNIsqHpVQO';
 const REDIRECT_URI = 'https://etask.herokuapp.com/';
 
 session_start();
