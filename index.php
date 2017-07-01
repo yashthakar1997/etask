@@ -7,10 +7,6 @@
  *  license         - GNU General Public License version 2 or later
 */
 
-echo "string";
-require('sigin.php');
-
-
 
 // REQUIREMENTS - PHP v5.3 or later
 // Note: The PHP client library requires that PHP has curl extensions configured. 
@@ -118,14 +114,6 @@ if (isset($_SESSION['access_token']) && $_SESSION['access_token']) {
     } else {
 
 
-$sql = "INSERT INTO google_data (google_id,google_name,google_email) VALUES ('$id','$name','$email')";
-if ($conn->query($sql) === TRUE) {
-    echo "New record created successfully <br>";
-} else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
-}
-
-$conn->close();
 
 
         print "ID: {$id} <br>";
