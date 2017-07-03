@@ -9,5 +9,7 @@ $(document).ready(function(){
 			$(".sidebar").show();
 		}
 	};
-
+	$("a.mobile").on('click touchstart', (function(){
+		$(".sidebar").slideToggle('fast');
+	});
 });
