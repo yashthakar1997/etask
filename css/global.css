@@ -123,7 +123,7 @@ a.mobile:active{
 	background-color: #4a4a4a;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 1080px) {
 	.sidebar{
 		width: 100%;
 		display: none;
@@ -133,7 +133,7 @@ a.mobile:active{
 		margin-left: 0px;
 	}
 }
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 1080px) {
 
 	a.mobile{
 		display: none;
