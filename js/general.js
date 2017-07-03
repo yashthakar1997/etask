@@ -1,6 +1,7 @@
 $(document).ready(function(){
-	$("a.mobile").on('click touchstart', (function(){
+	$("a.mobile").click(function(){
 		$(".sidebar").slideToggle('fast');
+	
 	});
 	
 	window.onresize = function(event) {
@@ -8,5 +9,5 @@ $(document).ready(function(){
 			$(".sidebar").show();
 		}
 	};
-
+	
 });
