@@ -30,7 +30,7 @@
     <div id="container">
         <div class="sidebar">
         <ul id="nav">
-            <li><a class="selected" href="#">HOME</a></li>
+            <li><a class="selected" href="http://etask.herokuapp.com/index.php">HOME</a></li>
             <li><a href="#">search</a></li>
             <li><a href="#">princial</a></li>
             <li><a href="#">teacher</a></li>
