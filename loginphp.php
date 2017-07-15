@@ -8,7 +8,7 @@
    $db = pg_connect( "$host $port $dbname $credentials"  );
 
 $uname = $_POST["$uname"];
-echo "$name";
+echo "$uname";
 
 
  $sql =<<<EOF
