@@ -26,6 +26,7 @@ EOF;
 $sql =<<<EOF
       DROP DATABASE d7vpp251p4l9tg;
 EOF;
+$ret = pg_query($db, $sql);
 
    echo "Operation done successfully\n";
    pg_close($db);
