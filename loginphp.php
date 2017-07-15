@@ -7,12 +7,14 @@
 
    $db = pg_connect( "$host $port $dbname $credentials"  );
 
+$name = $_POST['$uname'];
+echo $name;
+
+
  $sql =<<<EOF
       SELECT * from USERS;
 EOF;
 
-$name = $_POST['$uname'];
-echo $name;
 
 
    $ret = pg_query($db, $sql);
