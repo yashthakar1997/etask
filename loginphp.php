@@ -10,7 +10,7 @@
    $pass = $_POST['$pass'];
 
    $sql =<<<EOF
-      SELECT * from USERS;
+      SELECT * FROM USERS WHERE NAME = 'yash' AND PASSWORD = 'yash';
 EOF;
 
 
@@ -21,14 +21,9 @@ EOF;
       exit;
    } 
    while($row = pg_fetch_row($ret)) {
-
-     if ($uname = $row[1] || $pass = $row[2]) {
-               echo "string";
-         } else {
-                  echo "wrong username";
-         }
+      echo "$row[0]";
    }
-print_r($_session);
+
 
 <?php   include 'index.php'; ?>
 
