@@ -13,12 +13,12 @@
    }
 
  $sql =<<<EOF
-      CREATE TABLE user
+      CREATE TABLE USERS
       (ID INT PRIMARY KEY     NOT NULL,
       NAME           TEXT    NOT NULL,
       PASSWORD       TEXT     NOT NULL,
-      ROLE        CHAR(50),
-      ACTIVE         INT);
+      ROLE        INT,
+      ACTIVE      INT);
 EOF;
 
    $ret = pg_query($db, $sql);
