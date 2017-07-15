@@ -31,6 +31,14 @@ EOF;
 ?>
 */
 
+// for id increment
+
+$sql =<<<EOF
+      SELECT * from USERS;
+EOF;
+$id = $row[0];
+$id = $id + 1;
+
 $fname = $_POST['fname'];
 $lname = $_POST['lname'];
 $pass = $_POST['pass'];
@@ -38,7 +46,7 @@ $pass = $_POST['pass'];
 
 $sql =<<<EOF
       INSERT INTO USERS (ID,NAME,PASSWORD)
-      VALUES (,'$fname', '$pass');
+      VALUES ('$id','$fname', '$pass');
 
 EOF;
 
