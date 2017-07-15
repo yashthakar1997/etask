@@ -62,13 +62,13 @@ button[type=submit] {
                      <label for="pass">PassWord</label>
                      <input type="text" id="pass" name="pass" value="" placeholder="enter your password here">
                      <br /><br />
-                     <button type="submit"> login </button>
+                     <center><button type="submit"> login </button></center>
                 </form>
                 <hr>
                  <center> <h1> OR </h1> </center>
                 <hr>
                 <form action="signup.php">
-                    <button type="submit"> Signup </button>
+                    <center><button type="submit"> Signup </button></center>
                 </form>
                 </div>
                 </div>
