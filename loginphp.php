@@ -12,6 +12,9 @@
 EOF;
 
 $name = $_POST['$uname'];
+echo $name;
+
+
    $ret = pg_query($db, $sql);
    if(!$ret) {
       echo pg_last_error($db);
@@ -27,6 +30,5 @@ $name = $_POST['$uname'];
    }
 
 
-echo $name;
 
 ?>
