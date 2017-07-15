@@ -16,7 +16,7 @@ EOF;
       echo pg_last_error($db);
       exit;
    } 
-   while ( $arr = array(pg_fetch_all ($ret))) {
+   while ( $arr = pg_fetch_all ($ret)) {
        echo "$arr";
     } 
 
