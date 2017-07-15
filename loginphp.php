@@ -21,7 +21,6 @@ EOF;
       exit;
    } 
 
-echo $ret;
 
 <?php   include 'index.php'; ?>
 
