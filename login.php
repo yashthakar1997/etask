@@ -58,9 +58,9 @@ button[type=submit] {
                 <div class="input-field">
                 <form action="loginphp.php" method="POST">
                      <label for="uname">User Name</label>
-                     <input type="text" id="uname" name="uname" value="" placeholder="enter your name here">
+                     <input type="text" name="uname" placeholder="enter your name here">
                      <label for="pass">PassWord</label>
-                     <input type="text" id="pass" name="pass" value="" placeholder="enter your password here">
+                     <input type="text" name="pass" placeholder="enter your password here">
                      <br /><br />
                      <center><button type="submit"> login </button></center>
 
