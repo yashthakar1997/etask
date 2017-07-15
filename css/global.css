@@ -111,6 +111,8 @@ div#box .box-panel {
 	color: 333;
 }
 
+
+
 a.mobile{
 	display: block;
 	color: #fff;
@@ -139,3 +141,5 @@ a.mobile:active{
 		display: none;
 	}
 }	
+
+
