@@ -70,7 +70,7 @@ button[type=submit] {
                      <label for="clg">College</label>
                      <input type="text" id="clg" name="clg" value="" placeholder="enter your college name here">
                      <br /><br />
-
+                    
                      <button type="submit"> signup </button>
 
                 </form>

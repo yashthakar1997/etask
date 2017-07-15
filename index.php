@@ -32,6 +32,7 @@
             <div id="box">
                 <div class="box-top"> NEWS </div>
                 <div class="box-panel">
+                  <?php   include 'display.php'; ?>
                     Thos os some text lalala
                 </div>
             </div>
