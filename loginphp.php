@@ -23,7 +23,7 @@ EOF;
    while($row = pg_fetch_row($ret)) {
 
      if ($uname = $row[1] || $pass = $row[2]) {
-               $_SESSION = $row[0];
+               echo "password matched";
          } else {
                   echo "wrong username".$uname;
          }
