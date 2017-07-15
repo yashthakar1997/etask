@@ -8,7 +8,7 @@
    $db = pg_connect( "$host $port $dbname $credentials"  );
 
    $sql =<<<EOF
-      SELECT ID,NAME,PASSWORD,DEPARTMENT from USERS;
+      SELECT ID,NAME,PASSWORD,DESIGNATION,CLG from USERS;
 EOF;
 
    $ret = pg_query($db, $sql);
@@ -22,7 +22,7 @@ EOF;
       echo "NAME = ". $row[1] ."\n";
       echo "ADDRESS = ". $row[2] ."\n";
       echo "SALARY =  ".$row[4] ."\n\n";
-
+      echo "absdhbaj = ".$row[5]."<br>";
    }
 
 ?>
