@@ -12,14 +12,13 @@
       echo "Opened database successfully\n";
    }
 
-
 $fname = $_POST['fname'];
 $lname = $_POST['lname'];
 $pass = $_POST['pass'];
 
 
 $sql =<<<EOF
-      INSERT INTO USERS (NAME,PASSWORD)
+      INSERT INTO USERS (,NAME,PASSWORD)
       VALUES ('$fname', '$pass');
 EOF;
 
@@ -30,6 +29,4 @@ EOF;
       echo "Records created successfully\n";
    }
    pg_close($db);
-
-
 ?>
