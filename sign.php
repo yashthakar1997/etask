@@ -15,11 +15,13 @@
 $fname = $_POST['fname'];
 $lname = $_POST['lname'];
 $pass = $_POST['pass'];
+$designationn = $_POST['designationn'];
+$clg = $_POST['designationn'];
 
 
 $sql =<<<EOF
-      INSERT INTO USERS (,NAME,PASSWORD)
-      VALUES ('$fname', '$pass');
+      INSERT INTO USERS (NAME,PASSWORD,DESIGNATION,CLG)
+      VALUES ('$fname', '$pass', '$designation', '$clg');
 EOF;
 
    $ret = pg_query($db, $sql);

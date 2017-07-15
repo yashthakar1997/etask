@@ -36,7 +36,7 @@ button[type=submit] {
 <!-- https://thenewboston.com/videos.php?cat=92&video=19876 -->
 
     <div id="header">
-        <div class="logo"><a href="#"> e <span>Maintanence</span></a></div>
+        <div class="logo"><a href="http://etask.herokuapp.com/index.php"> e <span>Maintanence</span></a></div>
     </div>    
 
     <div><a class="mobile" href="#">Menu</a></div>
@@ -65,12 +65,12 @@ button[type=submit] {
                      <label for="pass">Password</label>
                      <input type="text" id="pass" name="pass" value="" placeholder="enter your password here">                <label for="repass">repeate Password</label>
                      <input type="text" id="repass" name="repass" value="" placeholder="reenter your password here"> 
-                     <label for="pass">Designation</label>
+                     <label for="designation">Designation</label>
                      <input type="text" id="pass" name="pass" value="" placeholder="enter your password here">
                      <label for="clg">College</label>
                      <input type="text" id="clg" name="clg" value="" placeholder="enter your college name here">
                      <br /><br />
-                    
+
                      <button type="submit"> signup </button>
 
                 </form>
