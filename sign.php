@@ -11,7 +11,7 @@
    } else {
       echo "Opened database successfully\n";
    }
-
+/*    table created sucessfully
  $sql =<<<EOF
       CREATE TABLE USERS
       (ID INT PRIMARY KEY     NOT NULL,
@@ -29,6 +29,26 @@ EOF;
    }
    pg_close($db);
 ?>
+*/
+
+$fname = $_POST['fname'];
+$lname = $_POST['lname'];
+$pass = $_POST['pass'];
+
+
+$sql =<<<EOF
+      INSERT INTO USERS (NAME,PASSWORD)
+      VALUES ('$fname', '$pass');
+
+EOF;
+
+   $ret = pg_query($db, $sql);
+   if(!$ret) {
+      echo pg_last_error($db);
+   } else {
+      echo "Records created successfully\n";
+   }
+   pg_close($db);
 
 
 ?>

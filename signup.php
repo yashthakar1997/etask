@@ -69,7 +69,6 @@ button[type=submit] {
                      <input type="text" id="pass" name="pass" value="" placeholder="enter your password here">
                      <label for="clg">College</label>
                      <input type="text" id="clg" name="clg" value="" placeholder="enter your college name here">
-
                      <br /><br />
 
                      <button type="submit"> signup </button>
