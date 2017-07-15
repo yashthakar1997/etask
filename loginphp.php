@@ -9,18 +9,24 @@
    $uname = $_POST['$uname'];
    $pass = $_POST['$pass'];
 
-   $sql =<<<EOF
+   $unam =<<<EOF
       SELECT * FROM USERS WHERE NAME = '$uname';
 EOF;
-
-
-   $ret = pg_query($db, $sql);
-
+   $pas =<<<EOF
+      SELECT * FROM USERS WHERE PASSWORD = '$pass';
+EOF;
+  
+   $ret = pg_query($db, $unam);
    if(!$ret) {
       echo pg_last_error($db);
       exit;
    } 
-echo $ret;   
+   $retu = pg_query($db, $pas);
+
+
+echo $unam;
+echo $pass;   
+
  //  while($row = pg_fetch_row($ret)) {
 
  //    if ($uname = $row[1] || $pass = $row[2]) {
@@ -29,7 +35,7 @@ echo $ret;
    //               echo "wrong username".$uname;
    //      }
   // }
-print_r($_session);
+
 
 //<?php   include 'index.php'; ?>
 
