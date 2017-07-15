@@ -37,7 +37,7 @@ $sql =<<<EOF
       SELECT * from USERS;
 EOF;
 $id = $row[0];
-$id = ++$id;
+$idi = $id + 1;
 
 $fname = $_POST['fname'];
 $lname = $_POST['lname'];
@@ -46,7 +46,7 @@ $pass = $_POST['pass'];
 
 $sql =<<<EOF
       INSERT INTO USERS (ID,NAME,PASSWORD)
-      VALUES ('$id','$fname', '$pass');
+      VALUES ('$idi','$fname', '$pass');
 
 EOF;
 
