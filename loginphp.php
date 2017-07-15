@@ -21,7 +21,8 @@ EOF;
    while($row = pg_fetch_row($ret)) {
       echo "ID = ". $row[0] . "\n";
       echo "NAME = ". $row[1] ."\n";
-      echo "PASSWORD = ". $row[2] ."<br>";
+      echo "PASSWORD = ". $row[2] ."\t";
+      echo "depart =".$row[3]."<br>";
       if ($row[1] = $name) {
          $x = 1;
       }
