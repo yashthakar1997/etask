@@ -5,7 +5,7 @@
    $credentials = "user = baialgsjdhvmxy password=57161bba2de05428b22372402d30d2e1f002c39a358e2b2b89cb8b1678342150";
 
    $db = pg_connect( "$host $port $dbname $credentials"  );
-
+   echo "string";
  $sql =<<<EOF
       SELECT * from COMPANY;
 EOF;
