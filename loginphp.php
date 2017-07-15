@@ -10,7 +10,7 @@
    $pass = $_POST['$pass'];
 
 
-<?php   include 'index.php'; ?>
+    include 'index.php';
 
 
 
