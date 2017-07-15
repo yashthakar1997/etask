@@ -20,10 +20,8 @@ EOF;
       echo pg_last_error($db);
       exit;
    } 
-   while($row = pg_fetch_row($ret)) {
-      echo "$row[0]";
-   }
 
+echo $ret;
 
 <?php   include 'index.php'; ?>
 
