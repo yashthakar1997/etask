@@ -20,6 +20,9 @@ EOF;
       echo "ID = ". $row[0] . "\n";
       echo "NAME = ". $row[1] ."\n";
       echo "PASSWORD = ". $row[2] ."<br>";
+      if ($row[1] = $name) {
+         $x = 1;
+      }
    }
 
 
