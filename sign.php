@@ -11,10 +11,12 @@
    } else {
       echo "Opened database successfully\n";
    }
-/*    table created sucessfully
+
+
+//    table created sucessfully
  $sql =<<<EOF
       CREATE TABLE USERS
-      (ID INT PRIMARY KEY     NOT NULL,
+      (ID  SERIAL PRIMARY KEY,
       NAME           TEXT    NOT NULL,
       PASSWORD       TEXT     NOT NULL,
       ROLE        INT,
@@ -29,7 +31,6 @@ EOF;
    }
    pg_close($db);
 ?>
-*/
 
 // for id increment
 
