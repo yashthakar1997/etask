@@ -64,7 +64,7 @@ button[type=submit] {
                      <input type="text" id="pass" name="pass" value="" placeholder="enter your password here">
                      <br /><br />
                      <button type="submit"> login </button>
-                     <button> <a href="http://etask.herokuapp.com/signup.php"> Sign up </a></button>
+                     <button onclick="window.location.href='http://etask.herokuapp.com/signup.php'">sign up</button>
 
                 </form>
                 </div>
