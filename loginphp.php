@@ -26,6 +26,6 @@ EOF;
    }
 
 
-echo "string";
+echo $x;
 
 ?>
