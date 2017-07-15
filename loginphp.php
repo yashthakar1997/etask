@@ -17,7 +17,8 @@ EOF;
       exit;
    } 
    while ( $arr = pg_fetch_all ($ret)) {
-       echo "$arr";
+       echo "$arr[0]";
+       
     } 
 
    while($row = pg_fetch_row($ret)) {
