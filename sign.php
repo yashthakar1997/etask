@@ -37,8 +37,8 @@ $pass = $_POST['pass'];
 
 
 $sql =<<<EOF
-      INSERT INTO USERS (NAME,PASSWORD)
-      VALUES ('$fname', '$pass');
+      INSERT INTO USERS (ID,NAME,PASSWORD)
+      VALUES (1,'$fname', '$pass');
 
 EOF;
 
