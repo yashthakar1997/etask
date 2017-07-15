@@ -9,18 +9,6 @@
    $uname = $_POST['$uname'];
    $pass = $_POST['$pass'];
 
-   $sql =<<<EOF
-      SELECT * FROM USERS;
-EOF;
-
-
-   $ret = pg_query($db, $sql);
-
-   if(!$ret) {
-      echo pg_last_error($db);
-      exit;
-   } 
-
 
 <?php   include 'index.php'; ?>
 
