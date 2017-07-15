@@ -8,6 +8,21 @@
    $db = pg_connect( "$host $port $dbname $credentials"  );
 
 
+$sql =<<<EOF
+      SELECT * from USERS;
+EOF;
+ $ret = pg_query($db, $sql);
+   if(!$ret) {
+      echo pg_last_error($db);
+      exit;
+   } 
+   while($row = pg_fetch_row($ret)) {
+      echo "ID = ". $row[0] . "\n";
+      echo "NAME = ". $row[1] ."\n";
+      echo "PASSWORD = ". $row[2] ."\n\n";
+   }
+
+
 echo "string";
 
 ?>
