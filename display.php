@@ -6,7 +6,7 @@
 
    $db = pg_connect( "$host $port $dbname $credentials"  );
 
-
+/*
 //    table created sucessfully
  $sql =<<<EOF
       CREATE TABLE USERS
@@ -27,7 +27,7 @@ EOF;
    }
    pg_close($db);
 
-/*
+*/
  $sql =<<<EOF
       SELECT * from USERS;
 
@@ -43,5 +43,4 @@ EOF;
       echo "NAME = ". $row[1] ."\n";
       echo "PASSWORD = ". $row[2] ."\n\n";
    }
-*/
 ?>
