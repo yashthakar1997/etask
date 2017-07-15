@@ -11,6 +11,7 @@
       SELECT * from USERS;
 EOF;
 
+$name = $_POST['$uname'];
    $ret = pg_query($db, $sql);
    if(!$ret) {
       echo pg_last_error($db);
@@ -26,6 +27,6 @@ EOF;
    }
 
 
-echo $x;
+echo $name;
 
 ?>
