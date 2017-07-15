@@ -36,7 +36,10 @@ EOF;
 $sql =<<<EOF
       SELECT * from USERS;
 EOF;
+
+while($row = pg_fetch_row($ret)) {
 $id = $row[0];
+}
 $idi = $id + 1;
 
 $fname = $_POST['fname'];
