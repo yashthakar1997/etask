@@ -30,7 +30,6 @@ EOF;
 */
  $sql =<<<EOF
       SELECT * from USERS;
-
 EOF;
 
    $ret = pg_query($db, $sql);
