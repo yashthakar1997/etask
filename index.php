@@ -1,3 +1,15 @@
+<?php
+   ob_start();
+   session_start();
+   if(isset($_SESSION['logged_in']) && $_SESSION['logged_in'] == 1) {
+        //session is set
+        header('Location: index.php');
+    } else if(!isset($_SESSION['logged_in']) || (isset($_SESION['logged_in']) && $_SESSION['logged_in'] == 0)){
+        //session is not set
+        header('Location: login.php');
+    }
+?>
+
 <html>
 <head>
     <title>e maintenence</title>
@@ -9,8 +21,6 @@
     <script src="js/general.js"></script>
 </head>
 <body>
-<!-- https://thenewboston.com/videos.php?cat=92&video=19876 -->
-
     <div id="header">
         <div class="logo"><a href="http://etask.herokuapp.com/index.php"> e <span>Maintanence</span></a></div>
     </div>    

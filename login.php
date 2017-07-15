@@ -56,7 +56,7 @@ button[type=submit] {
                 <div class="box-top">Enter Details</div>
                 <div class="box-panel">
                 <div class="input-field">
-                <form action="" method="POST">
+                <form action="loginphp.php" method="POST">
                     
                      <label for="uname">User Name</label>
                      <input type="text" id="uname" name="uname" value="" placeholder="enter your name here">
