@@ -12,7 +12,7 @@
 <!-- https://thenewboston.com/videos.php?cat=92&video=19876 -->
 
     <div id="header">
-        <div class="logo"><a href="#"> e <span>Maintanence</span></a></div>
+        <div class="logo"><a href="http://etask.herokuapp.com/index.php"> e <span>Maintanence</span></a></div>
     </div>    
 
     <div><a class="mobile" href="#">Menu</a></div>

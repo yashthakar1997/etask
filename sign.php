@@ -13,25 +13,6 @@
    }
 
 
-//    table created sucessfully
- $sql =<<<EOF
-      CREATE TABLE USERS
-      (ID  SERIAL PRIMARY KEY,
-      NAME           TEXT    NOT NULL,
-      PASSWORD       TEXT     NOT NULL,
-      ROLE        INT,
-      ACTIVE      INT);
-EOF;
-
-   $ret = pg_query($db, $sql);
-   if(!$ret) {
-      echo pg_last_error($db);
-   } else {
-      echo "Table created successfully\n";
-   }
-   pg_close($db);
-?>
-
 $fname = $_POST['fname'];
 $lname = $_POST['lname'];
 $pass = $_POST['pass'];

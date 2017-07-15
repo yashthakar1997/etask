@@ -21,11 +21,30 @@ EOF;
       echo "NAME = ". $row[1] ."\n";
       echo "PASSWORD = ". $row[2] ."\n\n";
    }
-*/
+
  
 $sql =<<<EOF
       DROP TABLE USERS;
 EOF;
+*/
+
+//    table created sucessfully
+ $sql =<<<EOF
+      CREATE TABLE USERS
+      (ID  SERIAL PRIMARY KEY,
+      NAME           TEXT    NOT NULL,
+      PASSWORD       TEXT     NOT NULL,
+      ROLE        INT,
+      ACTIVE      INT);
+EOF;
+
+   $ret = pg_query($db, $sql);
+   if(!$ret) {
+      echo pg_last_error($db);
+   } else {
+      echo "Table created successfully\n";
+   }
+   pg_close($db);
 
    echo "Operation done successfully\n";
    pg_close($db);
