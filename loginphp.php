@@ -23,11 +23,12 @@ EOF;
    while($row = pg_fetch_row($ret)) {
 
      if ($uname = $row[1] || $pass = $row[2]) {
-               echo "password matched";
+               $_SESSION['logged_in'] = 1;
          } else {
                   echo "wrong username".$uname;
          }
    }
+print_r($_session);
 
 <?php   include 'index.php'; ?>
 
