@@ -1,4 +1,4 @@
-<?php
+
 <?php
    $host        = "host = ec2-79-125-125-97.eu-west-1.compute.amazonaws.com";
    $port        = "port = 5432";
