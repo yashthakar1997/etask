@@ -10,7 +10,7 @@
    $pass = $_POST['$pass'];
 
    $sql =<<<EOF
-      SELECT * from USERS;
+      SELECT * FROM USERS WHERE NAME = $uname;
 EOF;
 
 
@@ -20,17 +20,18 @@ EOF;
       echo pg_last_error($db);
       exit;
    } 
-   while($row = pg_fetch_row($ret)) {
+echo $ret;   
+ //  while($row = pg_fetch_row($ret)) {
 
-     if ($uname = $row[1] || $pass = $row[2]) {
-               $_SESSION['logged_in'] = 1;
-         } else {
-                  echo "wrong username".$uname;
-         }
-   }
+ //    if ($uname = $row[1] || $pass = $row[2]) {
+ //              $_SESSION['logged_in'] = 1;
+  //       } else {
+   //               echo "wrong username".$uname;
+   //      }
+  // }
 print_r($_session);
 
-<?php   include 'index.php'; ?>
+//<?php   include 'index.php'; ?>
 
 
 
