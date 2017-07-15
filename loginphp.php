@@ -10,10 +10,10 @@
    $pass = $_POST['$pass'];
 
    $unam =<<<EOF
-      SELECT * FROM USERS WHERE NAME = "$uname";
+      SELECT * FROM USERS WHERE NAME = "yash";
 EOF;
    $pas =<<<EOF
-      SELECT * FROM USERS WHERE PASSWORD = "$pass";
+      SELECT * FROM USERS WHERE PASSWORD = "yash";
 EOF;
   
    $ret = pg_query($db, $unam);
