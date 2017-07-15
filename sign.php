@@ -37,7 +37,7 @@ $sql =<<<EOF
       SELECT * from USERS;
 EOF;
 $id = $row[0];
-$id = $id + 1;
+$id = $id++;
 
 $fname = $_POST['fname'];
 $lname = $_POST['lname'];
