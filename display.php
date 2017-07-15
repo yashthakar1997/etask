@@ -5,7 +5,7 @@
    $credentials = "user = baialgsjdhvmxy password=57161bba2de05428b22372402d30d2e1f002c39a358e2b2b89cb8b1678342150";
 
    $db = pg_connect( "$host $port $dbname $credentials"  );
-/*
+
  $sql =<<<EOF
       SELECT * from USERS;
 
@@ -22,29 +22,10 @@ EOF;
       echo "PASSWORD = ". $row[2] ."\n\n";
    }
 
- 
+/*   
 $sql =<<<EOF
       DROP TABLE USERS;
 EOF;
-*/
-
-//    table created sucessfully
- $sql =<<<EOF
-      CREATE TABLE USERS
-      (ID  SERIAL PRIMARY KEY,
-      NAME           TEXT    NOT NULL,
-      PASSWORD       TEXT     NOT NULL,
-      ROLE        INT,
-      ACTIVE      INT);
-EOF;
-
-   $ret = pg_query($db, $sql);
-   if(!$ret) {
-      echo pg_last_error($db);
-   } else {
-      echo "Table created successfully\n";
-   }
-   pg_close($db);
 
    echo "Operation done successfully\n";
    pg_close($db);
