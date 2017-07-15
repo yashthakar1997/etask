@@ -11,8 +11,6 @@
       SELECT * from USERS;
 EOF;
 
-
-
    $ret = pg_query($db, $sql);
    if(!$ret) {
       echo pg_last_error($db);
@@ -21,13 +19,9 @@ EOF;
    while($row = pg_fetch_row($ret)) {
       echo "ID = ". $row[0] . "\n";
       echo "NAME = ". $row[1] ."\n";
-      echo "PASSWORD = ". $row[2] ."\t";
-      echo "depart =".$row[3]."<br>";
-      if ($row[1] = $name) {
-         $x = 1;
-      }
+      echo "PASSWORD = ". $row[2] ."\n";
+      echo "depart =".$row[3]."\n";
+      echo "clg = ".$row[4]."<br>";
    }
-
-
 
 ?>
