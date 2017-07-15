@@ -28,16 +28,7 @@ button[type=submit] {
     cursor: pointer;
     width: 40%;
 }
-button[type=label] {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 16px 32px;
-    text-decoration: none;
-    margin: 4px 2px;
-    cursor: pointer;
-    width: 50%;
-}
+
 
     </style>
 </head>
@@ -66,14 +57,16 @@ button[type=label] {
                 <div class="box-panel">
                 <div class="input-field">
                 <form action="loginphp.php" method="POST">
-                    
                      <label for="uname">User Name</label>
                      <input type="text" id="uname" name="uname" value="" placeholder="enter your name here">
                      <label for="pass">PassWord</label>
                      <input type="text" id="pass" name="pass" value="" placeholder="enter your password here">
                      <br /><br />
                      <button type="submit"> login </button>
-                     <button type="label" onclick="window.location.href='http://etask.herokuapp.com/signup.php'">sign up</button>
+                </form>
+                <h1>OR </h1>
+                <form action="signup.php">
+                    <button type="submit"> Signup </button>
                 </form>
                 </div>
                 </div>
