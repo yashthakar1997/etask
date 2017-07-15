@@ -16,6 +16,10 @@ EOF;
       echo pg_last_error($db);
       exit;
    } 
+   while ( $arr = array(pg_fetch_all ($ret))) {
+       echo "$arr";
+    } 
+
    while($row = pg_fetch_row($ret)) {
       echo "ID = ". $row[0] . "\n";
       echo "NAME = ". $row[1] ."\n";
