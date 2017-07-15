@@ -32,26 +32,14 @@ EOF;
    pg_close($db);
 ?>
 
-// for id increment
-
-$sql =<<<EOF
-      SELECT * from USERS;
-EOF;
-
-while($row = pg_fetch_row($ret)) {
-$id = $row[0];
-}
-$idi = $id + 1;
-
 $fname = $_POST['fname'];
 $lname = $_POST['lname'];
 $pass = $_POST['pass'];
 
 
 $sql =<<<EOF
-      INSERT INTO USERS (ID,NAME,PASSWORD)
-      VALUES ('$idi','$fname', '$pass');
-
+      INSERT INTO USERS (NAME,PASSWORD)
+      VALUES ('$fname', '$pass');
 EOF;
 
    $ret = pg_query($db, $sql);
