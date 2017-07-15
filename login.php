@@ -65,7 +65,7 @@ button[type=submit] {
                      <center><button type="submit"> login </button></center>
                 </form>
                 <hr>
-                 <center> <h1> OR </h1> </center>
+                 <center> <h1> OR </h1><br> </center>
                 <hr>
                 <form action="signup.php">
                     <center><button type="submit"> Signup </button></center>
