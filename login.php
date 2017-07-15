@@ -44,7 +44,7 @@ button[type=submit] {
     <div id="container">
         <div class="sidebar">
         <ul id="nav">
-            <li><a class="selected" href="#">HOME</a></li>
+            <li><a class="selected" href="http://etask.herokuapp.com/index.php">HOME</a></li>
             <li><a href="#">search</a></li>
             <li><a href="#">princial</a></li>
             <li><a href="#">teacher</a></li>
@@ -64,6 +64,7 @@ button[type=submit] {
                      <input type="text" id="pass" name="pass" value="" placeholder="enter your password here">
                      <br /><br />
                      <button type="submit"> login </button>
+                     <button> <a href="http://etask.herokuapp.com/signup.php"> Sign up </a></button>
 
                 </form>
                 </div>
