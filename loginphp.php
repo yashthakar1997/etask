@@ -7,26 +7,15 @@
 
    $db = pg_connect( "$host $port $dbname $credentials"  );
 
- $sql =<<<EOF
-      SELECT * from USERS;
-EOF;
-
-   $ret = pg_query($db, $sql);
-   if(!$ret) {
-      echo pg_last_error($db);
-      exit;
-   } 
-   while ( $arr = pg_fetch_all ($ret)) {
-       echo "$arr[0]";
-       
-    } 
-
-   while($row = pg_fetch_row($ret)) {
-      echo "ID = ". $row[0] . "\n";
-      echo "NAME = ". $row[1] ."\n";
-      echo "PASSWORD = ". $row[2] ."\n";
-      echo "depart =". $row[3] ."\n";
-      echo "clg = ". $row[4] ."<br>";
+   $result = pg_query($conn, "SELECT * FROM USERS");
+   if (!$result) {
+      echo "An error occurred.\n";
+   exit;
    }
+
+while ($row = pg_fetch_row($result)) {
+  echo " $row[0]   $row[1]";
+  echo "<br />\n";
+}
 
 ?>
