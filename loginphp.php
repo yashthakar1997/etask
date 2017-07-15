@@ -7,7 +7,7 @@
 
    $db = pg_connect( "$host $port $dbname $credentials"  );
 
-   $result = pg_query($conn, "SELECT ID,NAME,PASSWORD,DESTINATION,CLG FROM USERS");
+   $result = pg_num_rows($conn, "SELECT ID,NAME,PASSWORD,DESTINATION,CLG FROM USERS");
    if (!$result) {
       echo "An error occurred.\n";
    exit;
