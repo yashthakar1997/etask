@@ -17,7 +17,7 @@ EOF;
       exit;
    } 
    while($row = pg_fetch_row($ret)) {
-      echo "ID = ". $row[0] . "\n";
+      echo "ID = ". $row[0] . "<br>";
       echo "NAME = ". $row[1] ."\n";
       echo "PASSWORD = ". $row[2] ."\n\n";
    }
