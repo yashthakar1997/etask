@@ -10,7 +10,7 @@
    $pass = $_POST['$pass'];
 
    $sql =<<<EOF
-      SELECT * FROM USERS WHERE NAME = $uname;
+      SELECT * FROM USERS WHERE NAME = '$uname';
 EOF;
 
 
