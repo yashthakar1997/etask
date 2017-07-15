@@ -20,8 +20,8 @@ EOF;
       echo "ID = ". $row[0] . "\n";
       echo "NAME = ". $row[1] ."\n";
       echo "PASSWORD = ". $row[2] ."\n";
-      echo "depart =".$row[3]."\n";
-      echo "clg = ".$row[4]."<br>";
+      echo "depart =". $row[3] ."\n";
+      echo "clg = ". $row[4] ."<br>";
    }
 
 ?>
