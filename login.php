@@ -28,7 +28,16 @@ button[type=submit] {
     cursor: pointer;
     width: 40%;
 }
-
+button[type=label] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 50%;
+}
 
     </style>
 </head>
@@ -64,8 +73,8 @@ button[type=submit] {
                      <input type="text" id="pass" name="pass" value="" placeholder="enter your password here">
                      <br /><br />
                      <button type="submit"> login </button>
+                     <button type="label" onclick="window.location.href='http://etask.herokuapp.com/signup.php'">sign up</button>
                 </form>
-                <button type="submit" onclick="window.location.href='http://etask.herokuapp.com/signup.php'">sign up</button>
                 </div>
                 </div>
             </div>
