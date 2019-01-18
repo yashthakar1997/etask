@@ -1,0 +1,7 @@
+{
+  "repositories": [
+    { "type": "composer", "url": "https://composer.typo3.org/" }
+  ],
+  "name": "test pipeline",
+  
+}
