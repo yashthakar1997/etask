@@ -2,6 +2,11 @@
   "repositories": [
     { "type": "composer", "url": "https://composer.typo3.org/" }
   ],
-  "name": "test pipeline"
+  "name": "test pipeline",
+  "require-dev": {
+       
+        "phpunit/phpunit": "^7.5",
+        
+    }
   
 }
