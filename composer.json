@@ -5,7 +5,7 @@
   "name": "test pipeline",
   "require-dev": {
        
-        "phpunit/phpunit": "^7.5",
+        "phpunit/phpunit": "^7.5"
         
     }
   
