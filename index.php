@@ -1,5 +1,5 @@
 <?php
 
-Echo "site under construction"
+include ('index.php');
 
 ?>
