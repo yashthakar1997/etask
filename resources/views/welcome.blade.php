@@ -225,8 +225,8 @@
                     @endauth
                 </div>
             @endif -->
-      <script src="{{ asset('assets/js/jquery.js') }}" type="text/javascript" /></script>
-      <script src="{{ asset('assets/js/materialize.min.js') }}" type="text/javascript" /></script>
-      <script src="{{ asset('assets/js/main.js') }}" type="text/javascript" /></script>
+      <script src="{{ secure_asset('assets/js/jquery.js') }}" type="text/javascript" /></script>
+      <script src="{{ secure_asset('assets/js/materialize.min.js') }}" type="text/javascript" /></script>
+      <script src="{{ secure_asset('assets/js/main.js') }}" type="text/javascript" /></script>
     </body>
 </html>
