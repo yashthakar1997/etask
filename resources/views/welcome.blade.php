@@ -7,11 +7,11 @@
         <!--Import Google Icon Font-->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <!--Import materialize.css-->
-        <link href="{{ asset('assets/css/materialize.min.css') }}" media="screen,projection" rel="stylesheet" type="text/css" />
-        <link href="{{ asset('assets/css/animate.css') }}" media="screen,projection" rel="stylesheet" type="text/css" />
-        <link href="{{ asset('assets/css/hover-min.css') }}" media="screen,projection" rel="stylesheet" type="text/css" />
-        <link href="{{ asset('assets/css/custom.css') }}" media="all" rel="stylesheet" type="text/css" />
-        <link href="{{ asset('assets/css/style.css') }}" media="screen,projection" rel="stylesheet" type="text/css" />
+        <link href="{{ secure_asset('assets/css/materialize.min.css') }}" media="screen,projection" rel="stylesheet" type="text/css" />
+        <link href="{{ secure_asset('assets/css/animate.css') }}" media="screen,projection" rel="stylesheet" type="text/css" />
+        <link href="{{ secure_asset('assets/css/hover-min.css') }}" media="screen,projection" rel="stylesheet" type="text/css" />
+        <link href="{{ secure_asset('assets/css/custom.css') }}" media="all" rel="stylesheet" type="text/css" />
+        <link href="{{ secure_asset('assets/css/style.css') }}" media="screen,projection" rel="stylesheet" type="text/css" />
 
         <title>eMaintenance</title>
     </head>
