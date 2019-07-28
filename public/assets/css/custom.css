@@ -1,0 +1,394 @@
+
+/* =============================================================
+                USER_PROFILE_PAGE_STARTS_HERE
+=============================================================== */
+
+/*NAVIGATION SECTION*/
+#sidenav-overlay {
+    z-index: 996 !important;
+}
+
+section.navigation-section nav {
+    background-color: #e3503c;
+}
+
+nav .user-navbar a.eM {
+    padding: 0 15px;
+}
+
+nav .user-navbar a.nav-collapse-btn {
+    float: right;
+}
+
+nav .user-navbar ul li.search {
+    position: relative;
+}
+
+nav .user-navbar ul li.search input.search-bar {
+    border: 0;
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 4px;
+    margin-bottom: 0;
+    padding-left: 25px;    
+}
+
+nav .user-navbar ul li.search > i {
+    position: absolute;
+    top: 0;
+    left: 34px;
+    font-size: 20px;
+}
+
+nav .user-navbar ul li.search input:focus {
+    color: #000;
+}
+
+nav .user-navbar ul li.search input::-moz-placeholder {
+    color: #fff;
+    font-size: 18px;
+}
+
+nav .user-navbar ul li.search input:focus::-moz-placeholder {
+    color: #000;
+}
+
+nav .user-navbar ul li input.search-bar:focus {
+    border-bottom: none !important;
+    -webkit-box-shadow:none !important;
+    box-shadow: none !important;
+    background-color: #fff;
+}
+
+nav .user-navbar ul.right {
+    width: 80%;
+}
+
+nav .user-navbar ul.right li:first-child {
+    width: 80%;
+    padding: 0 30px;    
+}
+
+nav .user-navbar ul.right li:nth-child(n+2) {
+    width: 6.66%;
+    text-align: center
+}
+
+nav .user-navbar ul.side-nav li {
+    width: 100%;
+}
+
+
+/*CONTENT_SECTION_CSS*/
+.content .main {
+    padding-left: 250px;
+}
+.content .main .left_side_navbar ul.side-nav {
+    top: 64px;
+    width: 250px;
+}
+
+.content .main .left_side_navbar > a.left-side-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 18px;
+    z-index: 997;
+}
+
+.content .main .left_side_navbar > a.left-side-nav > i {
+    color: #fff;
+}
+
+.content .main .left_side_navbar > ul#left-nav li:first-child {
+    position: relative;
+}
+
+.content .main .left_side_navbar ul.side-nav li.side_nav_link{
+    display: flex;
+}
+
+.content .main .left_side_navbar ul.side-nav li.side_nav_link > a {
+    padding: 0;
+    width: 100%;
+} 
+
+.content .main .left_side_navbar ul.side-nav li.side_nav_link > a > i {
+    padding-left: 10px;
+}
+
+.content .main .left_side_navbar > ul#left-nav li:first-child div.side_nav_user_prodfile {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.content .main .left_side_navbar > ul#left-nav li:first-child div.side_nav_user_prodfile > ul.side-nav-up-data {
+    display: inline-flex;
+}
+
+.content .main .left_side_navbar > ul#left-nav li:first-child div.side_nav_user_prodfile > ul.side-nav-up-data > li:first-child > img {
+    height: 60px;
+    border-radius: 50%;
+    margin-top: 8px;
+}
+
+.content .main .left_side_navbar > ul#left-nav li:first-child div.side_nav_user_prodfile > ul.side-nav-up-data > li:last-child {
+    padding-left: 20px;
+}
+
+.content .main .left_side_navbar > ul#left-nav li:first-child div.side_nav_user_prodfile > ul.side-nav-up-data > li:nth-child(n+3) {
+    padding-left: 30px;
+}
+
+.content .main .left_side_navbar > ul#left-nav li:first-child div.side_nav_user_prodfile > ul.side-nav-up-data > li:nth-child(n+2) > a {
+    background-color: transparent;
+    padding-left: 5px;
+    margin: 0;
+    color: #fff;
+    max-width: 100%;
+   
+}
+
+.content .main .left_side_navbar > ul#left-nav > li:first-child div.side_nav_user_prodfile > .side-nav-up-data > li:nth-child(n+2) > a > i {
+    float: right;
+    color: #fff;
+    padding: 0 0 0 25px;
+}
+
+.content .main .left_side_navbar > ul#left-nav li:first-child div.side_nav_user_prodfile > .side-nav-up-data li:nth-child(n+2) > p {
+    margin: -22px 5px;    
+    width: 10px;
+    color: #fff;
+    font-size: 12px;
+}
+
+.user-option-data > li > a {
+    padding: 0 !important;
+}
+
+.user-option-data > li > a > i {
+    margin: 0 15px !important;
+}
+
+/*PROFILE SECTION*/
+.profile_page .container {
+    width: 96%;
+}
+
+section.profile .container .profile_area .profile_background {
+    height: 250px;
+}
+
+section.profile .container .profile_area .profile_content {
+    padding: 10px;
+}
+
+section.profile .container .profile_area .profile_content  div.col  h6 {
+    font-size: 25px;
+}
+
+section.profile .container .profile_area .profile_content  div.col span{
+    
+    color: #9e9e9e;
+}
+
+section.profile .container .profile_area .profile_content .profile_image {
+height: 95px;
+position: absolute;
+top: 200px;
+left: 4%;
+z-index: 1;
+cursor: pointer;
+transform: translate(-5%,0);
+}
+
+section.profile .container .profile_area .profile_content .user_data > a {
+    margin-top: -30px;
+    right: 15px;
+    background-color: #e3503c;
+}
+
+section.profile .container .profile_area .user-profile-details .user_expand_details  li {
+    display: flex;
+    padding: 5px;
+}
+
+section.profile .container .profile_area .user-profile-details .user_expand_details  li > i {
+    padding-right: 10px;
+}
+
+section.profile .container .profile_area .user-profile-details .user_expand_details  li > span {
+    padding: 2px;
+}
+
+/* FOOTER_STARTS_HERE */
+.profile_page_footer {
+    background-color: #e3503c;    
+}
+
+.profile_page_footer > .container {
+    height: 50px;
+}
+
+.profile_page_footer > .container span.copy_right {
+    color: rgba(255,255,255,0.8);
+    line-height: 50px;
+}
+
+/* =============================================================
+                ADMIN_PROFILE_PAGE_STARTS_HERE
+=============================================================== */
+
+.admin_profile_page .container {
+    width: 96%;
+}
+.admin_profile_page .card-stacked .user_info_area{
+    padding: 10px;
+}
+.user_info {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.user_info > li {
+    width: 50%;
+    margin: auto;
+    padding: 2px;
+    word-wrap: break-word;
+}
+
+.user_info > li > div.input-field {margin: 0;}
+
+.user_info > li > div.input-field .select-wrapper > input {margin-bottom: 0px;}
+
+.admin_profile_page .card-stacked .user_info_area .changes_save_btn {
+    display: flex;
+    flex-direction: column;
+}
+
+.admin_profile_page .card-stacked .user_info_area .changes_save_btn .switch {
+    padding: 10px 0;
+    margin-left: auto;
+}
+
+/* =============================================================
+                ADMIN_MANAGE_USER_PAGE_STARTS_HERE
+=============================================================== */
+
+.admin_manage_user .manage_user_details .manage_user_img > img {
+    width: 250px;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.admin_manage_user .manage_user_details .manage_user_content {
+    padding: 4px 24px;
+    text-align: center;
+}
+
+.admin_manage_user .manage_user_details .manage_user_options {
+    text-align: center;
+    padding: 5px;
+}
+
+.admin_manage_user .manage_user_details .manage_user_options > button {
+    margin: 10px 10px;
+}
+
+/* =============================================================
+                RESOLVE_COMPLAIN_PAGE_STARTS_HERE
+=============================================================== */
+
+
+/* =============================================================
+                BLOCKED_USER_PAGE_STARTS_HERE
+=============================================================== */
+.blocked_user_content .blocked_users .blocked_user {
+    width: 96%;
+}
+
+.blocked_user_content .blocked_users .blocked_user .blocked_user_detail .enable_blocked_user {
+    margin-top: 15px;
+    text-align: right;
+}
+
+/* =============================================================
+                ADD_COMPLAIN
+=============================================================== */
+.add_complain_btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* =============================================================
+                MEDIA QUERYS STARTS HERE
+=============================================================== */
+@media (max-width:993px){
+
+    .content .main {
+        padding-left: 0px;
+    }
+
+    nav .user-navbar ul{
+        width: 250px;
+    }
+    .content .main .left_side_navbar ul.side-nav {
+        top: 0;
+        z-index: 999;
+    }
+
+}
+
+@media (max-width:601px) {
+    section.profile .container .profile_area .profile_background {
+        height: 180px;
+    }
+
+    section.profile .container .profile_area .profile_content .profile_image {
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%,-30%);
+    }
+
+    section.profile .container .profile_area .profile_content .user_name_role {
+        text-align: center;
+    }
+
+    .compain_list .complain_detail {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .compain_list .complain_detail .complain_img {
+        max-width: none;
+    }
+
+    .compain_list .complain_detail .complain_img .material-placeholder > img {
+        margin: 0 auto;
+    }
+
+    .compain_list .complain_detail .complain_desc > .comp_title {
+        text-align: center;
+    }
+
+    .blocked_user_content .blocked_users .blocked_user .blocked_user_detail {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blocked_user_content .blocked_users .blocked_user .blocked_user_detail .user_profile_img {
+        max-width: none;
+    }
+
+}
+
+
+/* 19-4-2018 */
+
+.side_nav_user_prodfile .side-nav-up-data .User-name {
+    word-wrap: break-word !important;
+}
